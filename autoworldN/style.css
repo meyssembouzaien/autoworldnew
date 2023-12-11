@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  ;
+}
+a{
+  text-decoration: none;
+
+}
+li{
+  list-style:none;
+}
+.header{
+  position:relative;
+}
+.header-top{
+  background-color:#100e4c;
+  display:flex ;
+  justify-content:center ;
+  color:#ffff;
+  height:50px; 
+}
+.header_top_article{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_top_icone{
+  color: #100e4c;
+  padding: 10px;
+  border-right: 1px solid #ebb1d7;
+}
+.header_top_text{
+  margin: 15px;
+}
+.header_top_text span{
+  color:rgb(246, 137, 197);
+  font-size:0.7rem;
+  font-weight: 600;
+  font-family:'Poppins',sans-serif;
+}
+.nav{
+  height: 90vh;
+  width:100%;
+  background-color: #100e4c;
+  background-image: url('image/bm3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.MENU{
+  display:flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #100e4c;
+  padding-bottom:5px ;
+}
+.logo{
+ margin-top: 10px;
+}
+.logo a {
+  font-size: 1.3rm;
+ color:#ffff;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.logo a span{
+ color:rgb(246, 137, 197);
+ font-weight:bold ;
+}
+
+
+
+.nav_items{
+  display: flex;
+}
+.link{
+  margin-left: 15px;
+  color:#ffff;
+  margin-top: 5px;
+  text-transform: uppercase; 
+  background-color:#99c1ca ;
+  padding:8px ;
+  border-radius: 10px;
+
+}
+.link:hover{
+  background: linear-gradient(
+    to left bottom,
+   rgb(130, 156, 192),
+   #090730
+   );
+}
+.link a{
+  color: #100e4c;
+ 
+}
+.menu_icone{
+  display:flex;
+  margin: 10px;
+  color:#ffff;
+  font-size:1.4rm;
+
+}
+.menu_icone a{
+  color:#100e4c;
+  padding: 5px;
+}
+.header-contenu{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+}
+.header-contenu h3{
+  font-size:1.8rm;
+   color:aliceblue;
+   font-weight: bold;
+   animation-name: moveInToleft;
+   animation-duration:2s ;
+   animation-timing-function:ease-in-out;
+   margin-bottom:10px ;
+}
+@keyframes moveInToleft{
+  0%{
+    opacity: 0;
+    transform: translate(-100px);
+  }
+  80%{
+    transform: translate(20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px);
+
+  }
+  
+}
+.header-contenu h1{
+  font-size:1rem;
+   color:#ffff;
+   font-weight: bold;
+   text-transform: uppercase;
+   font-family:'Bebas Neue',cursive;
+   letter-spacing: 5px;
+   animation-name: moveInToright;
+   animation-duration:2s ;
+   animation-timing-function:ease-in-out;
+   margin-bottom:10px ;
+}
+@keyframes moveInToright{
+  0%{
+    opacity: 0;
+    transform: translate(100px);
+  }
+  80%{
+    transform: translate(-20px);
+  }
+  100%{
+    opacity: 1;
+    transform: translate(0px);
+
+  }
+}
+.header-contenu .btn ,
+.btn2{
+  padding:10px;
+  background-color: transparent;
+
+}
+.header-contenu .btn{
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 15px 40px;
+  cursor: pointer;
+  margin:5px;
+  transition: all 0.2s;
+ 
+}
+.header-contenu  .btn1{
+  border:2px solid #ffff;
+  transition: ease-in-out;
+}
+.header-contenu  .btn2{
+  border:2px solid #ffff;
+  transition: ease-in-out;
+}
+.header-contenu  .btn1:hover{
+  background-color:#3e3c87 ;
+
+}
+.header-contenu  .btn2:hover{
+  background-color:#3e3c87 ;
+
+}
+.header-contenu  a{
+  color:#ffff ;
+}
+.btn:hover{
+  transform: translate(-3px);
+  box-shadow: 0 10px 20px rgb(234, 230, 230);
+}
+@media only screen and (max-width:600px) {
+  
+  .header-contenu h1{
+    font-size: 1.2em;
+  }
+  .header-contenu .btn{
+    text-transform:uppercase;
+    font-size: 0.7rem;
+
+  }
+  
+}
+
+.categorie-vehicule {
+  background-color: #dae5eb;
+  margin-top: 50px;
+}
+
+.categorie-titre {
+  text-align: center;
+}
+
+.categorie-titre h1 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.categorie-boite {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.categorie_unique {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+  width: 30%;
+}
+.categorie_unique {
+  display: inline-block;
+  margin-right: 30px;
+  vertical-align: top;
+  text-align: center; /* Ajout de cette propriété pour centrer les images */
+}
+
+
+
+
+
+.categorie_unique:hover .text_hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+
+.categorie_unique img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.text_hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 50%;
+  color: #fff;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, 50%);
+  transition: all 0.3s ease;
+  width: 80%;
+}
+
+.text_hover h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.text_hover p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.text_hover a {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: #333;
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.text_hover a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+   /* Style pour le formulaire */
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour les champs de saisie */
+input[type=text], input[type=email], input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Style pour le bouton d'envoi */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+ 
+ /* Style pour le formulaire */
+ form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour les champs de saisie */
+input[type=text], input[type=email], input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+/* Style pour le bouton d'envoi */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.footer {
+  background-color: #dae5eb;
+  padding: 50px 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #dae5eb;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box {
+  flex-basis: 25%;
+  margin-bottom: 30px;
+}
+
+.box h3 {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.box a {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  text-decoration: none;
+}
+
+.box a:hover {
+  color: #333;
+}
+
+.box i {
+  margin-right: 5px;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 12px;
+  color: #a5c1de;
+}
+
+.credit span {
+  color: #333;
+  font-weight: bold;
+}
+
+
+
+
+.temoignages {
+  background-color: #f9f9f9;
+  padding: 50px;
+  text-align: center;
+}
+
+.temoignages h2 {
+  margin-bottom: 50px;
+}
+
+.temoignage {
+  display: none;
+}
+
+.temoignage img {
+  border-radius: 50%;
+  height: 150px;
+  margin-bottom: 20px;
+  width: 150px;
+}
+
+.temoignage blockquote {
+  font-size: 18px;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+.temoignage blockquote p {
+  margin-bottom: 20px;
+}
+
+.temoignage blockquote cite {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
+.contact-section {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
+
+.contact-section h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-section label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.contact-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #0069d9;
+}
+
